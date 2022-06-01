@@ -12,6 +12,31 @@ h1 {
   color: rgb(255, 103, 242);
   text-shadow: 1px 2px 1px rgb(14, 13, 13);
 }
+.container-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.container-buttons button {
+  padding: 2%;
+  font-size: 80%;
+  cursor: pointer;
+  background-color: rgb(20, 20, 73);
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 3px rgb(255, 255, 255);
+}
+.container-buttons button:hover {
+  box-shadow: 0px 0px 6px 3px rgb(10, 33, 37);
+}
+.container-buttons button:active {
+  box-shadow: 0px 0px 4px 2px rgb(10, 33, 37);
+}
 @media screen and (min-width: 768px) {
   .container-charCard {
     width: 80%;

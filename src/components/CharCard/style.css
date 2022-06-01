@@ -14,14 +14,14 @@
   box-shadow: 2px 3px 5px rgb(12, 12, 12);
 }
 
-.char-card--Dead:hover{
-  box-shadow: 3px 4px 6px rgb(255, 8, 8);
+.char-card--Dead:hover {
+  box-shadow: 0px 0px 6px 3px rgb(255, 8, 8);
 }
-.char-card--Alive:hover{
-  box-shadow: 3px 4px 6px rgb(26, 252, 18);
+.char-card--Alive:hover {
+  box-shadow: 0px 0px 6px 3px rgb(26, 252, 18);
 }
-.char-card--unknown:hover{
-  box-shadow: 3px 4px 6px rgb(255, 255, 255);
+.char-card--unknown:hover {
+  box-shadow: 0px 0px 6px 3px rgb(255, 255, 255);
 }
 
 .char-card--Alive {
