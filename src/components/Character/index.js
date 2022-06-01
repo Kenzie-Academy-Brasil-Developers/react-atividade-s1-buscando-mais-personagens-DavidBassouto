@@ -14,7 +14,7 @@ function Character({ characterList, setPage, page }) {
             <button onClick={() => setPage(-1)}> Anterior </button>
           )}
           
-          {page === null ? (
+          {page === 42 ? (
             <button className="disabled"> Próxima </button>
           ) : (
             <button onClick={() => setPage(1)}> Próxima </button>
@@ -24,6 +24,20 @@ function Character({ characterList, setPage, page }) {
         {characterList.map((char) => (
           <CharCard char={char} key={char.id} />
         ))}
+        <div className="container-buttons">
+          {page === 1 ? (
+            <button className="disabled" > Anterior </button>
+          ) : (
+            <button onClick={() => setPage(-1)}> Anterior </button>
+          )}
+          
+          {page === 42 ? (
+            <button className="disabled"> Próxima </button>
+          ) : (
+            <button onClick={() => setPage(1)}> Próxima </button>
+          )}
+          
+        </div>
       </div>
     </>
   );
