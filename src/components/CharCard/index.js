@@ -1,7 +1,12 @@
+import { useHistory } from "react-router-dom";
 import "./style.css";
 function CharCard({ char }) {
+  const history = useHistory();
+  function goToChar(){
+    history.push(`/character/${char.id}`)
+  }
   return (
-    <div className={"char-card--" + char.status}>
+    <div onClick={goToChar} className={"char-card--" + char.status}>
       <div className="char-img">
         <img src={char.image} alt="" />
       </div>

@@ -45,6 +45,9 @@ span {
   font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 h2 {
   font-size: 30px;
