@@ -5,13 +5,15 @@
   font-size: 12px;
   text-align: initial;
 }
+
 .container-img {
     width: 100%;
   }
   .charPage-container img {
     box-shadow: 1px 2px 2px 1px grey;
     position: relative;
-    width: 100%;
+    width: 50%;
+    
 }
 
 @media screen and (min-width: 768px) {

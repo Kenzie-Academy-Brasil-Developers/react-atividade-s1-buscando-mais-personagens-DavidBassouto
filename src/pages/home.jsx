@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Character from "../components/Character";
+import axios from "axios";
 
 function Home() {
   const [characterList, setCharacterList] = useState([]);
@@ -10,9 +11,12 @@ function Home() {
   }
 
   useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
-      .then((res) => res.json())
-      .then((res) => setCharacterList(res.results));
+    axios
+      .get(`https://rickandmortyapi.com/api/character/?page=${page}`)
+      .then((res) => setCharacterList(res.data.results));
+    // fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
+    //   .then((res) => res.json())
+    //   .then((res) => setCharacterList(res.results));
   }, [page]);
 
   useEffect(() => {
