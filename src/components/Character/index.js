@@ -1,4 +1,7 @@
 import CharCard from "../CharCard";
+import ModalCharacter from "../ModalCharacter";
+import { useState } from "react";
+
 import "./style.css";
 
 function Character({ characterList, setPage, thisPage }) {
@@ -20,9 +23,13 @@ function Character({ characterList, setPage, thisPage }) {
             <button onClick={() => setPage(1)}> Próxima </button>
           )}
         </div>
+
         {characterList.map((char) => (
-          <CharCard char={char} key={char.id} />
+          <>
+            <CharCard char={char} key={char.id} />
+          </>
         ))}
+
         <div className="container-buttons">
           {thisPage.prev === null ? (
             <button className="disabled"> Anterior </button>

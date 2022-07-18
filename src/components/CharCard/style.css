@@ -16,12 +16,18 @@
 
 .char-card--Dead:hover {
   box-shadow: 0px 0px 6px 3px rgb(255, 8, 8);
+  transition: 0.4s;
+  filter: brightness(1.1);
 }
 .char-card--Alive:hover {
   box-shadow: 0px 0px 6px 3px rgb(26, 252, 18);
+  transition: 0.4s;
+  filter: brightness(1.1);
 }
 .char-card--unknown:hover {
   box-shadow: 0px 0px 6px 3px rgb(255, 255, 255);
+  transition: 0.4s;
+  filter: brightness(1.1);
 }
 
 .char-card--Alive {

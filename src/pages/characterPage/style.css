@@ -1,10 +1,4 @@
-.par,
-.span {
-  width: 50%;
-  height: 20px;
-  font-size: 12px;
-  text-align: initial;
-}
+
 
 .container-img {
     width: 100%;
@@ -44,6 +38,7 @@
   .container-img {
     width: 70%;
   }
+
   .container-img--alive {
     background-color: green;
   }
